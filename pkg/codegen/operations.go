@@ -23,7 +23,7 @@ import (
 	"text/template"
 	"unicode"
 
-	"github.com/gerhardwagner/oapi-codegen/pkg/util"
+	"github.com/FTOYD-Arena-Co/oapi-codegen/pkg/util"
 	"github.com/getkin/kin-openapi/openapi3"
 )
 

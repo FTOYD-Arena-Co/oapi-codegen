@@ -1,4 +1,4 @@
-module github.com/gerhardwagner/oapi-codegen
+module github.com/FTOYD-Arena-Co/oapi-codegen
 
 require (
 	github.com/apapsch/go-jsonmerge/v2 v2.0.0

@@ -1,4 +1,4 @@
-//go:generate go run github.com/gerhardwagner/oapi-codegen/cmd/oapi-codegen --config=cfg.yaml ../../petstore-expanded.yaml
+//go:generate go run github.com/FTOYD-Arena-Co/oapi-codegen/cmd/oapi-codegen --config=cfg.yaml ../../petstore-expanded.yaml
 
 package api
 

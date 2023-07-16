@@ -1,6 +1,6 @@
 package server
 
-//go:generate go run github.com/gerhardwagner/oapi-codegen/cmd/oapi-codegen --config=config.yaml ../test-schema.yaml
+//go:generate go run github.com/FTOYD-Arena-Co/oapi-codegen/cmd/oapi-codegen --config=config.yaml ../test-schema.yaml
 
 // This is commented out because the server_mog.gen.go keeps changing for no good reason, and
 // so, precommit checks fail. We need to regenerate this file occasionally manually.

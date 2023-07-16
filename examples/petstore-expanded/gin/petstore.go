@@ -13,8 +13,8 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/gerhardwagner/oapi-codegen/examples/petstore-expanded/gin/api"
-	middleware "github.com/gerhardwagner/oapi-codegen/pkg/gin-middleware"
+	"github.com/FTOYD-Arena-Co/oapi-codegen/examples/petstore-expanded/gin/api"
+	middleware "github.com/FTOYD-Arena-Co/oapi-codegen/pkg/gin-middleware"
 )
 
 func NewGinPetServer(petStore *api.PetStore, port int) *http.Server {

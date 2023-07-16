@@ -3,7 +3,7 @@ package grabimportnames
 import (
 	"testing"
 
-	"github.com/gerhardwagner/oapi-codegen/pkg/codegen"
+	"github.com/FTOYD-Arena-Co/oapi-codegen/pkg/codegen"
 	"github.com/getkin/kin-openapi/openapi3"
 	"github.com/stretchr/testify/require"
 )

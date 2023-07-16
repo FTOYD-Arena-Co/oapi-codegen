@@ -25,7 +25,7 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/gerhardwagner/oapi-codegen/pkg/testutil"
+	"github.com/FTOYD-Arena-Co/oapi-codegen/pkg/testutil"
 	"github.com/getkin/kin-openapi/openapi3"
 	"github.com/getkin/kin-openapi/openapi3filter"
 	"github.com/gin-gonic/gin"
