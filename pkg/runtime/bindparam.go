@@ -23,7 +23,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/gerhardwagner/oapi-codegen/pkg/types"
+	"github.com/FTOYD-Arena-Co/oapi-codegen/pkg/types"
 )
 
 // BindStyledParameter binds a parameter as described in the Path Parameters

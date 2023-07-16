@@ -7,9 +7,9 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/gerhardwagner/oapi-codegen/examples/petstore-expanded/gorilla/api"
-	middleware "github.com/gerhardwagner/oapi-codegen/pkg/chi-middleware"
-	"github.com/gerhardwagner/oapi-codegen/pkg/testutil"
+	"github.com/FTOYD-Arena-Co/oapi-codegen/examples/petstore-expanded/gorilla/api"
+	middleware "github.com/FTOYD-Arena-Co/oapi-codegen/pkg/chi-middleware"
+	"github.com/FTOYD-Arena-Co/oapi-codegen/pkg/testutil"
 	"github.com/gorilla/mux"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

@@ -10,9 +10,9 @@ import (
 	"net/http"
 	"testing"
 
-	examplePetstoreClient "github.com/gerhardwagner/oapi-codegen/examples/petstore-expanded"
-	examplePetstore "github.com/gerhardwagner/oapi-codegen/examples/petstore-expanded/echo/api"
-	"github.com/gerhardwagner/oapi-codegen/pkg/util"
+	examplePetstoreClient "github.com/FTOYD-Arena-Co/oapi-codegen/examples/petstore-expanded"
+	examplePetstore "github.com/FTOYD-Arena-Co/oapi-codegen/examples/petstore-expanded/echo/api"
+	"github.com/FTOYD-Arena-Co/oapi-codegen/pkg/util"
 	"github.com/getkin/kin-openapi/openapi3"
 	"github.com/golangci/lint-1"
 	"github.com/stretchr/testify/assert"
@@ -20,9 +20,9 @@ import (
 )
 
 const (
-	remoteRefFile = `https://raw.githubusercontent.com/gerhardwagner/oapi-codegen/master/examples/petstore-expanded` +
+	remoteRefFile = `https://raw.githubusercontent.com/FTOYD-Arena-Co/oapi-codegen/master/examples/petstore-expanded` +
 		`/petstore-expanded.yaml`
-	remoteRefImport = `github.com/gerhardwagner/oapi-codegen/examples/petstore-expanded`
+	remoteRefImport = `github.com/FTOYD-Arena-Co/oapi-codegen/examples/petstore-expanded`
 )
 
 func checkLint(t *testing.T, filename string, code []byte) {
@@ -363,7 +363,7 @@ func TestRemoteExternalReference(t *testing.T) {
 	assert.Contains(t, code, "package api")
 
 	// Check import
-	assert.Contains(t, code, `externalRef0 "github.com/gerhardwagner/oapi-codegen/examples/petstore-expanded"`)
+	assert.Contains(t, code, `externalRef0 "github.com/FTOYD-Arena-Co/oapi-codegen/examples/petstore-expanded"`)
 
 	// Check generated oneOf structure:
 	assert.Contains(t, code, `
