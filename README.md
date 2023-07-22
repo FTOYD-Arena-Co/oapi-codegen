@@ -297,7 +297,7 @@ func (*PetStoreImpl) GetPets(ctx context.Context, request GetPetsRequestObject) 
 }
 ```
 
-For a complete example see [`examples/petstore-expanded/strict`](https://github.com/deepmap/oapi-codegen/tree/master/examples/petstore-expanded/strict).
+For a complete example see [`examples/petstore-expanded/strict`](https://github.com/FTOYD-Arena-Co/oapi-codegen/tree/master/examples/petstore-expanded/strict).
 
 Code is generated with a configuration flag `generate: strict-server: true` along with any other server (echo, chi, gin and gorilla are supported).
 The generated strict wrapper can then be used as an implementation for `ServerInterface`. Setup example:
@@ -373,7 +373,7 @@ func (a NewPet) MarshalJSON() ([]byte, error) {...}w
 
 There are many special cases for `additionalProperties`, such as having to
 define types for inner fields which themselves support additionalProperties, and
-all of them are tested via the [`internal/test/components`](https://github.com/deepmap/oapi-codegen/tree/master/internal/test/components) schemas and tests. Please
+all of them are tested via the [`internal/test/components`](https://github.com/FTOYD-Arena-Co/oapi-codegen/tree/master/internal/test/components) schemas and tests. Please
 look through those tests for more usage examples.
 
 #### oneOf/anyOf/allOf support
@@ -846,11 +846,11 @@ output-options:
     # https://raw.githubusercontent.com/<username>/<project>/<hash|tag|branch>/path/to/template/template.tmpl
 
     # using raw.githubusercontent.com with a hash
-    client-with-responses.tmpl: https://raw.githubusercontent.com/deepmap/oapi-codegen/7b010099dcf1192b3bfaa3898b5f375bb9590ddf/pkg/codegen/templates/client-with-responses.tmpl
+    client-with-responses.tmpl: https://raw.githubusercontent.com/FYOYD-Arena-Co/oapi-codegen/7b010099dcf1192b3bfaa3898b5f375bb9590ddf/pkg/codegen/templates/client-with-responses.tmpl
     # using raw.githubusercontent.com with a tag
-    client-with-responses.tmpl: https://raw.githubusercontent.com/deepmap/oapi-codegen/v1.12.4/pkg/codegen/templates/client-with-responses.tmpl
+    client-with-responses.tmpl: https://raw.githubusercontent.com/FYOYD-Arena-Co/oapi-codegen/v1.12.4/pkg/codegen/templates/client-with-responses.tmpl
     # using raw.githubusercontent.com with a branch
-    client-with-responses.tmpl: https://raw.githubusercontent.com/deepmap/oapi-codegen/master/pkg/codegen/templates/client-with-responses.tmpl
+    client-with-responses.tmpl: https://raw.githubusercontent.com/FYOYD-Arena-Co/oapi-codegen/master/pkg/codegen/templates/client-with-responses.tmpl
 
     #This example is directly embedding the template into the config file.
     client-with-responses.tmpl: |

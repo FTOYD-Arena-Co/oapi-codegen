@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/deepmap/oapi-codegen/pkg/runtime"
+	"github.com/FTOYD-Arena-Co/oapi-codegen/pkg/runtime"
 	"github.com/go-chi/chi/v5"
 )
 
