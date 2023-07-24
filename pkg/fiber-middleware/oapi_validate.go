@@ -7,16 +7,14 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"net/http"
-	"os"
-	"strings"
-
 	"github.com/getkin/kin-openapi/openapi3"
 	"github.com/getkin/kin-openapi/openapi3filter"
 	"github.com/getkin/kin-openapi/routers"
 	"github.com/getkin/kin-openapi/routers/gorillamux"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/adaptor"
+	"net/http"
+	"os"
 )
 
 type ctxKeyFiberContext struct{}
@@ -137,11 +135,7 @@ func ValidateRequestFromContext(c *fiber.Ctx, router routers.Router, options *Op
 
 		switch e := err.(type) {
 		case *openapi3filter.RequestError:
-			// We've got a bad request
-			// Split up the verbose error by lines and return the first one
-			// openapi errors seem to be multi-line with a decent message on the first
-			errorLines := strings.Split(e.Error(), "\n")
-			return fmt.Errorf("error in openapi3filter.RequestError: %s", errorLines[0])
+			return fmt.Errorf("error in openapi3filter.RequestError: %w", e)
 		case *openapi3filter.SecurityRequirementsError:
 			return fmt.Errorf("error in openapi3filter.SecurityRequirementsError: %w", e)
 		default:
